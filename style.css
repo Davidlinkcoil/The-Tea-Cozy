@@ -1,0 +1,150 @@
+/* Global Variables */
+
+:root{
+    --main-font : Helvetica;
+    --nav-font-size:22px;
+    --main-text-color:rgb(237, 126, 48);
+    --space-between-sections:50px;
+}
+
+
+/* Romove default styles of the browser */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* to prevent overflow from the max screen size  */
+}
+body{
+    background-color: black;
+    font-family: var(--main-font);
+    font-size: var(--nav-font-size);
+    color: var(--main-text-color);
+    /* max-width: 1400px; */
+    opacity: 0.9;
+}
+
+/* Headear and Navigation */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 100vh; */
+    height: 69px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color: black;
+    border-bottom: 1px solid var(--main-text-color);
+}
+
+.logo{
+    height: 50px;
+}
+header nav a{
+    text-decoration: underline;
+    padding: 0 10px;
+}
+nav a, nav a:visited, nav a:hover, nav a:active {
+    color: inherit;
+}
+/* --------------------------------------------------------------- */
+/* ------------------------MAIN----------------------------------- */
+main{
+    margin-top: 69px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+/* Mission */
+#mission{
+    background-image: url(resource/img-mission-background.jpg);
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#mission div{
+    background-color: black;
+    width:inherit;
+    padding: 20px;
+    text-align: center;
+    line-height: 2em;
+}
+/********************Featured******************************** */
+#featured{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    align-items: center;
+    margin-top: var(--space-between-sections);
+}
+.featured-title{
+    padding: 20px;
+    line-height: 2em;
+    text-align: center;
+}
+#featured figure img{
+    max-width: 300px;
+    max-height: 200px;
+}
+#featured figure figcaption{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 600;
+}
+.container-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+}
+
+/* Location */
+#locations{
+    background-image: url(resource/img-locations-background.jpg);
+    height: 500px;
+    width: 1200px;
+    margin-top: var(--space-between-sections);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.location__boxes{
+    display: flex;
+    /* background-color: black; */
+    justify-content: space-around;
+    gap:40px;
+}
+
+.box{
+    margin-top: 15px;
+    background-color: black;
+    width:300px;
+    text-align: center;
+    opacity: 1;
+    padding: 10px;
+    line-height: 3em;
+}
+.box p{
+    font-weight: 600;
+}
+footer{
+    margin-top: var(--space-between-sections);
+    height: 200px;
+    line-height: 2em;
+    text-align: center;
+}
+.copyright{
+    margin-left: 20px;
+    float: left;
+}
